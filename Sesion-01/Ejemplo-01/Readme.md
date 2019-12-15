@@ -110,5 +110,5 @@ btnStop.setOnClickListener{
 
 9.- Ejecuta la aplicación, debe de visualizarse algo similar a esto.
 
-<img src="Images/04.png" width="30%">
+<img src="/Images/04.png" width="30%">
 
