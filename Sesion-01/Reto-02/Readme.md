@@ -7,9 +7,9 @@
 
 #### REQUISITOS 
 
-1.- Haber estudiado el tema VideoView
-2. Haber finalizado el [Ejemplo 1](../Ejempo-01) del módulo 2 de la sesión 1
-3. Haber finalizado el [Ejemplo 2](../Ejempo-02) del módulo 2 de la sesión 1
+- Haber estudiado el tema VideoView
+- Haber finalizado el [Ejemplo 1](../Ejempo-01) del módulo 2 de la sesión 1
+- Haber finalizado el [Ejemplo 2](../Ejempo-02) del módulo 2 de la sesión 1
 
 #### DESARROLLO
 
@@ -31,6 +31,7 @@ Debido a que existen temas sin tocar, vamos a facilitar snippets para que sean f
 <details>
 
 <summary>Respuesta</summary>
+
 
 Recordando el tema de ciclos de vida, cuando existe rotación, la actividad en curso se destruye y se crea una nueva, por lo que se necesita restaurar el estado del video. con esto tenemos que nos falta: 
 
