@@ -1,27 +1,35 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reproducción de audio
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Expandir el conocimiento de la clase MediaPlayer
+- Implementar el View SeekBar
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber finalizado el [Ejemplo 03](/../../tree/master/Sesion-04/Ejemplo-03) de esta sesión.
+2. 
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Tomando el código del [ejemplo 03](/../../tree/master/Sesion-04/Ejemplo-03), se agregará una barra de progreso (SeekBar) capaz de mostrar el progreso de reproducción del audio y poder cambiar el segundo de reproducción.
 
-<details>
+1.- Implementar el View ***SeekBar*** en el layout de la actividad principal.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+*Opcional*: agregarle el siguiente atributo (para darle mejor estética a este) 
+>style="@style/Widget.AppCompat.SeekBar.Discrete"
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+2.- 
 
+
+
+##### Apéndice 
+
+| Método | Descripción  | return type  |
+| :-----:| :----------: | :----------: |
+| isLooping() | informa si el MediaPlayer está en loop o no | boolean |
+| seekTo(int msec) | regresa el MediaPlayer al tiempo especificado | void | 
+| pause() | pausa la reproducción | void |
+| getCurrentPosition() | Obtiene la posición en tiempo actual de la reproducción | int | 
+|isPlaying() | informa si el MediaPlayer se está reproduciendo | boolean |
+| getDuration | obtiene la duración del archivo en milisegundos, (-1 si no se pudo obtener) | int |
