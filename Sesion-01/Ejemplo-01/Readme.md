@@ -1,5 +1,5 @@
 
-## Titulo del Ejemplo
+## Multimedia - Reproducción con MediaPlayer
 
 ### OBJETIVO
 
@@ -63,7 +63,7 @@
 
 3.- En res, crear un nuevo directorio llamado Raw y agregar el audio incluído en este directorio.
 
-<img src="https://github.com/beduExpert/B1-Kotlin-Intermedio/blob/master/Sesion-04/Reto-03/Images/04.png" width="30%">
+<img src="Images/04.png" width="30%">
 
 4.- Vamos a crear una variable de instancia que almacene un objeto MediaPlayer, para poder reproducir el audio guardado en la app. Debe ser lateinit porque se inicializará después
 
