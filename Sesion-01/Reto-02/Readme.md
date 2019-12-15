@@ -20,7 +20,7 @@ Debido a que existen temas sin tocar, vamos a facilitar snippets para que sean f
 
 2.- Determinaremos un layout con el VideoView ocupando toda la actividad, cuando la orientación del dispositivo sea Landscape. Crearemos en res el directorio **layout-land** que contendrá  el layout *activity_main.xml* en horizontal.
 
-<img src="Images/image01.png" width="30%">
+<img src="Images/image-01.png" width="30%">
 
 3.- Crear el MediaController que nos da por defecto android y asignarlo a nuestro VideoView.
 
