@@ -64,4 +64,4 @@ videoView.setOnCompletionListener {
 
 6.- Corremos la aplicación y vemos el vídeo.
 
-<img src="image01.png" width="30%">
+<img src="Image01.png" width="30%">
