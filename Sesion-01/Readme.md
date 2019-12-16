@@ -1,18 +1,17 @@
-## Módulo: Kotlin Avanzado
+## Multimedia y animaciones
 
 ### OBJETIVOS 
 
-- Desarrollar aplicaciones móviles competentes, mediante el uso de técnicas, herramientas y servicios que en conjunto integran una experiencia de usuario intuitiva y satisfactoria.
+- Reproducir elementos audiovisuales a través de vistas configuradas al formato necesario para desplegar el contenido de la forma deseada. Animar vistas y transacciones que indiquen al usuario el estado y den pistas de lo que ocurre en la aplicación.
 
+#### ORGANIZACION DE LA CLASE 
 
-#### ORGANIZACION DE MÓDULO 
+- Temas de la sesión
 
- - [Sesión 1](Sesion-01/): Multimedia y animaciones
- - [Sesión 2](Sesion-02/): Listas
- - [Sesión 3](Sesion-03/): Networking
- - [Sesión 4](Sesion-04/): Persistencia de datos
- - [Sesión 5](Sesion-05/): Crashlytics
- - [Sesión 6](Sesion-06/): Push notifications
- - [Sesión 7](Sesion-07/): Inyección de dependencias
- - [Sesión 8](Sesion-08/): RxKotlin
+	- [Ejemplo 01](Ejemplo-01): Multimedia - Reproducción con MediaPlayer
+	- [Reto 01](Reto-01) Reproducción de audio
+	- [Ejemplo 02](Ejemplo-02): Reproducción de video
+	- [Reto 02](Reto-02)
+	- [Ejemplo 03](Ejemplo-03): Animaciones y transiciones
+	- [Reto 03](Reto-03)
 
