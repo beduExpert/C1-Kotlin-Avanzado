@@ -1,18 +1,18 @@
- 
-## Módulo: Nombre del modulo
+## Módulo: Kotlin Avanzado
 
-### OBJETIVO 
- - Agrega lo que van a aprender en el modulo
+### OBJETIVOS 
 
- ### ORGANIZACIÓN DE MÓDULO 
- 
- - [Sesión 1](): 
- - [Sesión 2](): 
- - [Sesión 3](): 
- - [Sesión 4](): 
- - [Sesión 5](): 
- - [Sesión 6](): 
- - [Sesión 7](): 
- - [Sesión 8]():
+- Desarrollar aplicaciones móviles competentes, mediante el uso de técnicas, herramientas y servicios que en conjunto integran una experiencia de usuario intuitiva y satisfactoria.
 
+
+#### ORGANIZACION DE MÓDULO 
+
+ - [Sesión 1](Sesion-01/): Multimedia y animaciones
+ - [Sesión 2](Sesion-02/): Listas
+ - [Sesión 3](Sesion-03/): Networking
+ - [Sesión 4](Sesion-04/): Persistencia de datos
+ - [Sesión 5](Sesion-05/): Crashlytics
+ - [Sesión 6](Sesion-06/): Push notifications
+ - [Sesión 7](Sesion-07/): Inyección de dependencias
+ - [Sesión 8](Sesion-08/): RxKotlin
 
