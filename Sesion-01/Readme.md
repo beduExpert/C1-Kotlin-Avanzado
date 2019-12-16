@@ -1,16 +1,18 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Titulo de la Sesion 
+## Módulo: Kotlin Avanzado
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Desarrollar aplicaciones móviles competentes, mediante el uso de técnicas, herramientas y servicios que en conjunto integran una experiencia de usuario intuitiva y satisfactoria.
 
-#### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+#### ORGANIZACION DE MÓDULO 
 
-	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
+ - [Sesión 1](Sesion-01/): Multimedia y animaciones
+ - [Sesión 2](Sesion-02/): Listas
+ - [Sesión 3](Sesion-03/): Networking
+ - [Sesión 4](Sesion-04/): Persistencia de datos
+ - [Sesión 5](Sesion-05/): Crashlytics
+ - [Sesión 6](Sesion-06/): Push notifications
+ - [Sesión 7](Sesion-07/): Inyección de dependencias
+ - [Sesión 8](Sesion-08/): RxKotlin
 
