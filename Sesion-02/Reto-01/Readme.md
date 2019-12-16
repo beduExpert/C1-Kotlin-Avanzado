@@ -15,7 +15,7 @@
 - Se debe generar una lista que contenga algunos ganadores de los Game Awards 2019.
 - Los datos de lectura son: título, categoría, ESRB, rating y idPortrait (id de imagen)
 
-Las imágenes dentro de cada Item de la lista están en la siguiente [Ruta](../Resources) (se deben de pasar al directorio *drawable*).
+Las imágenes dentro de cada Item de la lista están en la siguiente [Ruta](resources) (se deben de pasar al directorio *drawable*).
 
 
 1.- Crear un nuevo Layout para cada Item de nuestra lista, proponemos esta, pero cualquiera que se ajuste al modelo de datos es bien recibido:
