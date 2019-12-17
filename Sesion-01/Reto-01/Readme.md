@@ -7,12 +7,12 @@
 
 #### REQUISITOS 
 
-1. Haber finalizado el [Ejemplo 03](/../../tree/master/Sesion-04/Ejemplo-03) de esta sesión.
+1. Haber finalizado el [Ejemplo 01](/../../tree/master/Sesion-04/Ejemplo-01) de esta sesión.
 2. 
 
 #### DESARROLLO
 
-Tomando el código del [ejemplo 03](/../../tree/master/Sesion-04/Ejemplo-03), se agregará una barra de progreso (SeekBar) capaz de mostrar el progreso de reproducción del audio y poder cambiar el segundo de reproducción.
+Tomando el código del [ejemplo 01](/../../tree/master/Sesion-04/Ejemplo-01), se agregará una barra de progreso (SeekBar) capaz de mostrar el progreso de reproducción del audio y poder cambiar el segundo de reproducción.
 
 1.- Implementar el View ***SeekBar*** en el layout de la actividad principal.
 
