@@ -1,16 +1,19 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Titulo de la Sesion 
+## Sesión 2 - Listas
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Que el alumno conozca las Vistas que administran y almacenan información.
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
 
-	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
+
+	- [Ejemplo 01](Ejemplo-01) - ListViews
+	- [Reto 01](Reto-01) 
+	- [Ejemplo 02](Ejemplo-02) - Spinner
+	- [Reto 02](Reto-02)
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03) - RecyclerView
+	
+	
 
