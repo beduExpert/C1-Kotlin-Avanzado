@@ -32,6 +32,14 @@ Para terminar con nuestro pokedex, debemos ser capaces de notificar al usuario c
  
  El reto es donde suscribir al cliente para que tome efecto (**Hint:** es algo que ya se vio).
  
+ El resultado es la impresión en el logcat que sucede cuando se hace una llamada con retrofit:
+ 
+ <img src="01.png" width="33%">
+ 
  3.- Agregar un mensaje (puede ser un Toast) que le notifique al usuario cuando el pokemon que ingresó es inexistente o hay un problema de comunicación. (**Hint:** es en los callbacks de retrofit).
+ 
+ El mensaje se debe ver parecido a esto: 
+ 
+  <img src="02.png" width="33%">
  
 
