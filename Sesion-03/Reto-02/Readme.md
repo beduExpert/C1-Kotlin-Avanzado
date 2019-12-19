@@ -36,24 +36,22 @@ por lo tanto, necesitamos una clase data que tenga dicha estructura.
 
 <details>
 
-	<summary>Solucion</summary>
-	
-```kotlin
-package org.bedu.advancedokhttp
+        <summary>Solucion</summary>
+        ```kotlin
+	package org.bedu.advancedokhttp
 
-import com.google.gson.annotations.SerializedName
+	import com.google.gson.annotations.SerializedName
 
-data class Jedi(
-    val name: String? = "",
-    val height: Int? = 0,
-    val mass: Int? =0
-)
+	data class Jedi(
+	    val name: String? = "",
+	    val height: Int? = 0,
+	    val mass: Int? =0
+	)
 
-data class JediList(
-   @SerializedName("results") //el nombre real
-    val jediList: ArrayList<Jedi>
-)
-```
-	
+	data class JediList(
+	   @SerializedName("results") //el nombre real
+	    val jediList: ArrayList<Jedi>
+	)
+	```
 </details>
 
