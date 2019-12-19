@@ -17,7 +17,7 @@ Buscamos sólamente imprimir en consola el resultado de la lista entera de gente
 
 por lo tanto, requerimos mostrar una pantalla así:
 
-<img src="01.png" width:"35%">
+<img src="01.png" width="35%">
 
 * El json tiene la siguiente estructura: 
 ```js
@@ -27,6 +27,7 @@ por lo tanto, requerimos mostrar una pantalla así:
         {...},
 	{...},
 	]
+}
 ```
 
 por lo tanto, necesitamos una clase data que tenga dicha estructura.
@@ -35,7 +36,7 @@ por lo tanto, necesitamos una clase data que tenga dicha estructura.
 
 <details>
 
-	<summary>Solución</summary>
+	<summary>Solucion</summary>
 	
 ```kotlin
 package org.bedu.advancedokhttp
