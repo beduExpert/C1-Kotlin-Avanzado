@@ -28,7 +28,7 @@ implementation("com.squareup.okhttp3:okhttp:4.2.2")
 
 3. Sincronizamos el proyecto con el botón *Sync project with gradle files* para aplicar los cambios e instalar la dependencia.
 
-4.- Debemos agregar el permiso de internet en nuestro *manifest*, de otra manera la aplicación crasheará al querer hacer una petición.
+4. Debemos agregar el permiso de internet en nuestro *manifest*, de otra manera la aplicación crasheará al querer hacer una petición.
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -92,7 +92,7 @@ private val baseUrl = "https://swapi.co/api/planets"
 
 y en *onCreate()*, setearemos el listener de nuestro botón asíncrono:
 
-``kotlin
+```kotlin
  btnRequest.setOnClickListener{
         llamadaAsincrona()
 }
