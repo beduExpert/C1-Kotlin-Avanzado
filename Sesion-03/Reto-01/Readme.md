@@ -17,7 +17,7 @@ en una lista (aplicar el conociemiento de la [Sesión 02](../../Sesion-02)). Cad
 
 La aplicación debe verse así:
 
-<img align="center" src="01.png" width:"33%">
+<img align="center" src="01.png" width="33%">
 
 
 
