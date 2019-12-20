@@ -27,7 +27,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgBedu"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="24dp"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etMail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -45,10 +45,10 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imgBedu" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/etPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -56,7 +56,7 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/etMail" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -66,17 +66,73 @@
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/etPass" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
 2. Guardamos el archivo adjunto ***bedu.png*** en la carpeta drawable, dentro de res. 
 
 
-3.- Para cambiar de pantalla sin poder regresar a la anterior con el botón back, aquí está el siguiente código.
+3. Para cambiar de pantalla sin poder regresar a la anterior con el botón back, aquí está el siguiente código.
 
 ```kotlin
 val i = Intent(this, LoggedActivity::class.java)
             i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(i)
 ```
+4. Utilizar este código para que en onStart cambiar de actividad (hay que declarar los métodos isLogged y goToLogged)
+
+```kotlin
+   override fun onStart() {
+        super.onStart()
+
+        if(isLogged()){
+            goToLogged()
+        }
+    }
+```
+
+5. Guardar este archivo como *activity_logged.xml*
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <TextView
+    android:id="@+id/tvEmail"
+        android:text="Correo"
+    android:layout_marginTop="64dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvName"
+        android:text="Nombre"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Cerrar sesión"
+        android:id="@+id/btnClose"
+        android:layout_marginTop="64dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+```
+
+**Aconsejamos también declarar todos los tags en una sola actividad y que la otra los utilice, evitando así confusiones en ellas**
+```kotlin
+companion object{
+        val PREFS_NAME = "org.bedu.login"
+        val EMAIL = "email"
+        val IS_LOGGED = "is_logged"
+    }
+```
+
+utilizando:
+```kotlin
+getSharedPreferences(MainActivity.PREFS_NAME, Context.MODE_PRIVATE)
+```
+
+
