@@ -330,7 +330,7 @@ class RecyclerAdapter(
 
 La pantalla debe quedar así:
 
-<img src="01.png" width:"33%">
+<img src="01.png" width="33%">
 
 
 
