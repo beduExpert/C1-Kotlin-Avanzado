@@ -135,4 +135,10 @@ utilizando:
 getSharedPreferences(MainActivity.PREFS_NAME, Context.MODE_PRIVATE)
 ```
 
+Las pantallas se deben ver así
+
+<img src="01.png" width="33%">
+
+<img src="02.png" width="33%">
+
 
