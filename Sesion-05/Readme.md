@@ -10,8 +10,6 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
-
 	- [Ejemplo 01](Ejemplo-01) Crashlytics - primeros pasos
 	- [Reto 01](Reto-01)
 	
