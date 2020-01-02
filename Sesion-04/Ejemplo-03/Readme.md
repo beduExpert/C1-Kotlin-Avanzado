@@ -28,7 +28,7 @@ contacts = realm
 
 Deberemos visualizar lo siguiente:
 
-<img src="01.png" with="33%"/>
+<img src="01.png" width="33%"/>
 
 - Ahora Vamos a filtrar los nombres que comiencen con K:
 
@@ -41,7 +41,7 @@ contacts = realm
 
 Deberemos visualizar lo siguiente:
 
-<img src="02.png" with="33%"/>
+<img src="02.png" width="33%"/>
 
 -Ahora vamos a mostrar los contactos que vivan en *Lille* o que su nombre contenga la letra *S*, para eso, haremos uso de *groups*:
 
@@ -58,7 +58,7 @@ contacts = realm
 
 Deberemos visualizar lo siguiente:
 
-<img src="03.png" with="33%"/>
+<img src="03.png" width="33%"/>
 
 3. Ahora vamos a recibir notificaciones cada que exista una modificación en el *Realm*, primero, removemos los Toast de nuestro proyecto (uno al agregar nuevo contacto en *MainActivity* y otro en el *RecyclerAdapter*, en el clickListener de nuestra vista). Después delcaramos esta variable en nuestra clase:
 
@@ -92,4 +92,4 @@ override fun onDestroy() {
 
 la notificación se mostrará así:
 
-<img src="04.png" with="33%"/>
+<img src="04.png" width="33%"/>
