@@ -56,13 +56,11 @@ contacts = realm
 ```kotlin
 contacts = realm
             .where(Contact::class.java)
-            .beginGroup()
-                .beginsWith("name","K")
-                .and()
-                .contains("name","e")
-                .or()
-                .equalTo("city","Xinqiao")
-            .endGroup()
+            .beginsWith("name","K")
+            .and()
+            .contains("name","e")
+            .or()
+            .equalTo("city","Xinqiao")
             .findAll()
 
 ```
@@ -96,5 +94,29 @@ contacts = realm
 ```
 
 </details> 
+
+- Que el nombre no lleve *a*, que su ID sea mayor o igual a 2 y que su ciudad no lleve *u* . Ordenar nombres por orden alfabético.
+
+
+<details>
+	<summary>Solucion</summary>
+	
+```kotlin
+contacts = realm
+            .where(Contact::class.java)
+            .not()
+            .beginGroup()
+            .contains("name","a")
+            .or()
+            .contains("city","u")
+            .endGroup()
+            .and()
+            .greaterThanOrEqualTo("id",2)
+            .sort("name")
+            .findAll()
+```
+
+</details> 
+
 
 
