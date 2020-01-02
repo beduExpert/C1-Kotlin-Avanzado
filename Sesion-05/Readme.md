@@ -10,16 +10,15 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-	- [Ejemplo 01](Ejemplo-01) Crashlytics - primeros pasos
-	- [Reto 01](Reto-01)
+- [Ejemplo 01](Ejemplo-01) Crashlytics - primeros pasos
+- [Reto 01](Reto-01)
 	
 	
-	- [Ejemplo 02](Ejemplo-02) Crashlytics - siguientes pasos
-	- [Reto 02](Reto-02)
+- [Ejemplo 02](Ejemplo-02) Crashlytics - siguientes pasos
+- [Reto 02](Reto-02)
 
 
-
-	- [Ejemplo 03](Ejemplo-03)Configuraciones adicionales
-	- [Reto 03](Reto-03)
+- [Ejemplo 03](Ejemplo-03)Configuraciones adicionales
+- [Reto 03](Reto-03)
 
 
