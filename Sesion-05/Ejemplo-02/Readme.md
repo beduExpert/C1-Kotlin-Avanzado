@@ -1,27 +1,56 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Crashlytics - siguientes pasos
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Enriquecer la experiencia con crashlytics
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber cursado el [Reto 1](../Reto-01)
+2. Haber leído el prework
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Anteriormente pudimos ver cómo generar un propio error lanzando una excepción,Ahora vamos a agregar datos extra del usuario.
 
-<details>
+Tomamos de base el proyecto del [Reto 1](../Reto-01) para comenzar:
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+este es la pestaña de datos del último registro hecho en el [Reto 1](../Reto-01), donde se pueden apreciar que los datos que aparecen son del dispositivo, pero no tienen info personal.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+<img src="img/01.png" width="95%"/>
+
+1. vamos a agregar los siguientes datos:
+        -Correo electrónico
+        -UID
+        -Nombre de usuario
+        
+con los siguientes métodos, llamados en el onCreate: 
+
+```kotlin
+Crashlytics.setUserIdentifier("Bedu-LmtvK4ge-Fqox-blRy")
+Crashlytics.setUserEmail("manuel@bedu.org")
+Crashlytics.setUserName("Manuel Bedu")
+```
+2. Esperamos un momento y consultamos el dashboard de Crashlytics, abrimos el último registro y abrimos la pesataña *datos*:
+
+<img src="img/02.png" width="95%"/>
+
+
+3. En el anterior error, al entrar a la pestaña de Claves, podemos observar que el log está vacío:
+
+<img src="img/03.png" width="95%"/>
+
+Pondremos ahora valores clave a los errores, llamando a los siguientes métodos en el *onCreate*:
+
+```kotlin
+Crashlytics.setInt("Edad", 23)
+Crashlytics.setString("Trabajo", "Developer")
+Crashlytics.setBool("Bloqueado",false)
+Crashlytics.setFloat("Crédito",1350.23f)
+```
+
+corremos la aplicación y volvemos a generar el error. Consultamos el log y nos vamos a la pestaña *Claves*, debería salir un log similar al siguiente:
+
+<img src="img/04.png" width="95%"/>
 
 
