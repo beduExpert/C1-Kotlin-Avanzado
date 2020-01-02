@@ -10,7 +10,7 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Temas que se abordan en esta sesión:
 
 	- [Ejemplo 01](Ejemplo-01) SharedPreferences
 	- [Reto 01](Reto-01)
