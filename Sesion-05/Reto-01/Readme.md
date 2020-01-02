@@ -21,11 +21,11 @@ En el ejemplo pasado, nuestra ventana había quedado así:
 
 - Al dar click al StackTrace, saldrá el siguiente panel, analizarlo y explorar las pestañas
 
-<img src="../Reto-01/img/02.png" width="40%"/>
+<img src="../Reto-01/img/02.png" width="90%"/>
 
 - La última pestaña son datos del dispositivo que tuvo los errores
 
-<img src="../Reto-01/img/03.png" width="40%"/>
+<img src="../Reto-01/img/03.png" width="90%"/>
 
 - La pestaña de registros corresponde a logs que se imprimen desde la aplicación por medio del comando: 
 
@@ -70,13 +70,13 @@ try {
 
 En el dashboard, se deben ver reflejadas las tareas de la siguiente forma: 
 
-<img src="../Reto-01/img/04.png" width="40%"/>
+<img src="../Reto-01/img/04.png" width="90%"/>
 
 Como ya no se usa el error provocado por Crashlytics, sino un NullPointerException provocado por nosotros, ahora se muestra que el origen del error fue en *MainActivity.kt*. Notamos también que dice *No crítico* (son errores que se cachan en un try catch)
 
-<img src="../Reto-01/img/05.png" width="40%"/>
+<img src="../Reto-01/img/05.png" width="90%"/>
 
-<img src="../Reto-01/img/06.png" width="40%"/>
+<img src="../Reto-01/img/06.png" width="90%"/>
 
 Tanto en el logcat como en el registro aparece el error log que escribimos.
 
