@@ -83,7 +83,13 @@ Si no deseas compartir la información de los crashes de tu app o quieres modifi
 
 
 
+
+
+
 <img src="img/15.png" width="40%"/>
+
+
+
 
 
 
