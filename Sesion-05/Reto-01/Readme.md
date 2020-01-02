@@ -58,6 +58,7 @@ try {
                 throw NullPointerException()
             } catch (ex: NullPointerException) {
                 Crashlytics.log(Log.ERROR, "CrashError", "NullPointer Provocado para pruebas!")
+		Crashlytics.logException(ex) //para que se pueda reportar el non fatal exception
             }
         }
 ```
