@@ -1,16 +1,21 @@
 
 agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
 
-## Titulo de la Sesion 
+## Persistencia de datos 
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Utilizar la librería SharedPreferences
+- Introducirnos a la librería Realm como DB
 
 #### ORGANIZACION DE LA CLASE 
 
 - Tema que veran en el ejemplo
 
-	- [Ejemplo 01](Ejemplo-01)
+	- [Ejemplo 01](Ejemplo-01) SharedPreferences
 	- [Reto 01](Reto-01)
+	- [Ejemplo 02](Ejemplo-02) Aplicación básica de Realm
+	- [Reto 01](Reto-02)
+	- [Ejemplo 03](Ejemplo-03) Realm Avanzado
+	- [Reto 01](Reto-03)
 
