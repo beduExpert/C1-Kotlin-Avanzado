@@ -1,27 +1,153 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Crashlytics - Siguientes pasos
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno practique lo visto en la sesión
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber cursado los ejemplos anteriores
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Vamos a basarnos en el proyecto del [Ejemplo 2](../Ejemplo-02) para poder escribir nuestro archivo.
 
-<details>
+1. Se debe diseñar la primera pantalla de la siguiente manera
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+<img src="01.png" width="33%"/>
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 
+-Los radioButtons funcionan dentro de un RadioGroup, parecido a esto:
+
+```xml
+<RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp">
+        <RadioButton
+            android:id="@+id/rbtnPaypal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="true"
+            android:text="Paypal" />
+
+        <RadioButton
+            android:id="@+id/rbtnWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Monedero" />
+
+        <RadioButton
+            android:id="@+id/rbtnCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Tarjeta de crédito" />
+    </RadioGroup>
+```
+**El equipo debe ser capaz de generar el layout sin ayuda**
+
+- El MainActivity debe ser tal cuál el que está a continuación (no hace falta leerlo). No olvidar nombrar el botón de pago como ***btnPago*** para evitar inconsistencias (también los radioButtons deben mantener su id).
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+
+    val VISA = "Visa"
+    val WALLET = "Wallet"
+    val PAYPAL = "PayPal"
+
+    val payments = arrayOf(
+        VISA,
+        WALLET,
+        PAYPAL
+    )
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        Crashlytics.setUserIdentifier("Bedu-LmtvK4ge-Fqox-blRy")
+        Crashlytics.setUserEmail("manuel@bedu.org")
+        Crashlytics.setUserName("Manuel Bedu")
+
+
+
+        btnError.setOnClickListener{
+            payGame()
+        }
+    }
+
+    private fun payGame(){
+
+        var paymentType: Int
+
+        if(rbtnPaypal.isChecked){
+            paymentType = 2
+
+        } else if(rbtnCard.isChecked){
+            paymentType = 0
+
+        } else{
+            paymentType = 3
+        }
+
+
+        Crashlytics.setInt("Tipo de pago",paymentType)
+        val payment = payments.get(paymentType)
+
+        if(payment == PAYPAL){
+            Snackbar.make(window.decorView.findViewById(android.R.id.content), "No se Admite PayPal", Snackbar.LENGTH_LONG)
+                .show()
+        } else{
+            val intent = Intent(this,SuccessActivity::class.java)
+            startActivity(intent)
+        }
+
+
+    }
+}
+
+```
+
+- Debe existir otra clase que se llame SuccessActivity con el siguiente código:
+
+```kotlin
+package org.bedu.crashlytics
+
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+
+class SuccessActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_success)
+    }
+
+}
+```
+
+y su respectivo layout
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textAlignment="center"
+        android:textSize="64sp"
+        android:text="¡Compra Efectuada!"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+```
+
+2. Probar el pago con los tres métodos de pago y solucionar los errores de Crash viendo el stacktrace en**Crashlytics**!
