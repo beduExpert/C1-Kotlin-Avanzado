@@ -79,7 +79,7 @@ Vamos a manipular al menos tres de esos estados.
 
 Si no deseas compartir la información de los crashes de tu app o quieres modificar el rango de tolerancia a incidencias repetidas por un periodo de tiempo, hay que abrir el DropDown menu en la esquina superior derecha del módulo de problemas.
 
-<img src="img/14png" width="40%"/>
+<img src="img/14.png" width="40%"/>
 
 
 
