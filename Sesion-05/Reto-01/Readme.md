@@ -53,7 +53,7 @@ try {
 
 
 <details>
-	<summary>Solucion<summary/>
+	<summary>Solucion</summary>
 		
 ```kotlin
  btnError.setOnClickListener{
@@ -66,7 +66,7 @@ try {
         }
 ```
 	
-<details/>
+</details>
 
 ***Nota: crashlytics guarda máximo 64kb del log en memoria para evitar realentamiento en la app***
 
