@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
                 throw NullPointerException()
             } catch (ex: NullPointerException) {
                 Crashlytics.log(Log.ERROR, "CrashError", "NullPointer Provocado para pruebas!")
+                Crashlytics.logException(ex)
             }
         }
     }
