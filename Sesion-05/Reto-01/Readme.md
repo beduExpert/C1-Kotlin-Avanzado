@@ -49,6 +49,9 @@ try {
     }
 ```
 
+**IMPORTANTE:** el log de un crash report se envía en la siguiente vez que la aplicación se abra para evitar problemas de tráfico, por lo cual en los errores no críticos, hay que cerrar y volver a abrir nuestra app
+
+
 <details>
 	<summary>Solucion<summary/>
 		
@@ -63,7 +66,7 @@ try {
         }
 ```
 	
-</details>
+<details/>
 
 ***Nota: crashlytics guarda máximo 64kb del log en memoria para evitar realentamiento en la app***
 
