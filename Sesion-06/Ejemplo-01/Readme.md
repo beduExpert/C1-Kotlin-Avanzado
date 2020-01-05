@@ -9,7 +9,9 @@
 1. Haber leído el Prework
 
 #### DESARROLLO
-Las pruebas los haremos con dos dispositivos (virtuales o no): uno con Android API 25 o menor, y otro con API 26
+
+Las pruebas los haremos con dos dispositivos (virtuales o no): uno con Android API 25 o menor, y otro con API 26.
+
 
 1. Debemos verificar que nuestro proyecto incluya la librería de compatibilidad. 
 
@@ -61,6 +63,39 @@ implementation "com.android.support:support-compat:28.0.0"
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+
+Agregamos estos strings a nuestro recurso *strings.xml*:
+
+```xml
+ <!-- textos para la push simple -->
+    <string name="simple_title">Bedu</string>
+    <string name="simple_body">¡Esta es nuestra primera notificación creada!</string>
+
+    <!-- textos para la push con acción -->
+    <string name="action_title">Cursos Bedu</string>
+    <string name="action_body">¡Espera los nuevos cursos que Bedu ha preparado para ti!</string>
+
+    <!-- textos para la push con botón -->
+    <string name="button_title">Bedu</string>
+    <string name="button_body">Da click en el botón de abajo para ejecutar una acción</string>
+    <string name="button_text">Aceptar</string>
+
+
+    <string name="large_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+
+    <!-- CANAL CURSOS -->
+    <string name="channel_courses">cursos</string>
+    <string name="courses_description">Notificaciones acerca de cursos impartidos</string>
+```
+
+y este color a *colors.xml*
+
+```xml
+<color name="triforce">#CC9900</color>
+```
+
+arrastrar todos los recursos de [Res](/Res) a la carpeta en *res/drawable*
 
 la pantalla debe quedar de esta forma:
 
