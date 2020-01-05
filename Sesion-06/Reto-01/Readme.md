@@ -1,27 +1,52 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Notificaciones
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Aplicar el conocimiento adquirido en el [Ejemplo 1](../Ejemplo-01)
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber cursado el [Ejemplo 1](../Ejemplo-01)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Reforzaremos ciertos conceptos del ejemplo anterior.
+
+1. Corremos la app en un dispositivo con OS menor a la API 26 Reproduciremos en secuencia y rápidamente los tres botones de la aplicación ¿Qué sucede? Se generaron nuevas notificaciones o se reemplazaron las mismas? Por qué creen que sucede esto? (Comentar y resolver con el instructor) y hacer que las notificaciones no se reemplacen.
 
 <details>
-
 	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+	
+	en cada generación de notificacción, hacer las id's diferentes para el método notify(id,builder.build()) 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+</details>
+
+
+2. Ahora, crear otro canal de push notifications, de modo que se vean como en la siguiente pantalla
+
+<img src="01.png" width="33%"/>
+
+la notificación simple y con botón deben pertenecer al canal *Diversos*, mientras que el de redireccionamiento debe estar en *Cursos*.
+
+<details>
+	<summary>Solucion</summary>
+	
+	Crear otro canal, suscribirlo en onCreate y asignarlo a las notificaciones correspondientes.
+	
+</details>
+
+Apagar el switch del canal *Diversos*, abrir la app y accionar los tres botones ¿Qué sucede ahora? comentar la causa.
+
+
+3. Hacer que la notificación de redireccionamiento también implemente el botón que acciona el Toast.
+
+<details>
+	<summary>Solucion</summary>
+	
+	Utiliza el cógido del PendingIntent y el método addAction del builder de la notificación en la función *buttonNotification*
+	
+</details>
+
+
+
 

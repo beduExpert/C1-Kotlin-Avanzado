@@ -95,7 +95,7 @@ y este color a *colors.xml*
 <color name="triforce">#CC9900</color>
 ```
 
-arrastrar todos los recursos de [Res](/Res) a la carpeta en *res/drawable*
+arrastrar todos los recursos de [Res](res) a la carpeta en *res/drawable*
 
 la pantalla debe quedar de esta forma:
 
