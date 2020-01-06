@@ -1,16 +1,24 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Titulo de la Sesion 
+## Crashlytics
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Provocar errores en un ambiente controlado.
+- Aprender a manejar el dashboard de Crashlytics.
+- Utilizar la herramienta de análisis de errores para organizar bugs, determinar su causa y resolverlos.
+
+
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- [Ejemplo 01](Ejemplo-01) Crashlytics - primeros pasos
+- [Reto 01](Reto-01)
+	
+	
+- [Ejemplo 02](Ejemplo-02) Crashlytics - siguientes pasos
+- [Reto 02](Reto-02)
 
-	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
+
+- [Ejemplo 03](Ejemplo-03)Configuraciones adicionales
+- [Reto 03](Reto-03)
+
 

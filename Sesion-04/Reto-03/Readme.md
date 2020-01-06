@@ -1,27 +1,122 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Realm avanzado
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Aprender más operaciones en la recuperación de datos de un Realm
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber finalizado el [Ejemplo 3](../Ejemplo-03)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Tomaremos como base el [Ejemplo 2](../Ejemplo-02) nuevamente y para consultar las modificaciones, lo haaremos desde [ESTA PÁGINA](https://realm.io/docs/java/latest/#queries)
+
+Recuerden previamente desinstalar la app ***RealmExample*** para restablecer nuestra información 
+
+Vamos a ver los siguientes casos:  
+
+- Mostrar sólo id's mayores a 4
+
 
 <details>
-
 	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	
+```kotlin
+contacts = realm
+            .where(Contact::class.java)
+            .greaterThan("id",4)
+            .findAll()
+```
+	
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+- Que no terminen con n
+
+<details>
+	<summary>Solucion</summary>
+	
+```kotlin
+contacts = realm
+            .where(Contact::class.java)
+            .not()
+            .endsWith("name","n")
+            .findAll()
+
+```
+	
+</details> 
+
+- Que sean de Xinquiao o 
+- Que su nombre comience con K y contenga alguna e donde sea
+
+<details>
+	<summary>Solucion</summary>
+	
+```kotlin
+contacts = realm
+            .where(Contact::class.java)
+            .beginsWith("name","K")
+            .and()
+            .contains("name","e")
+            .or()
+            .equalTo("city","Xinqiao")
+            .findAll()
+
+```
+
+</details> 
+
+- Mostrar sólo 4 resultados
+
+<details>
+	<summary>Solucion</summary>
+	
+```kotlin
+contacts = realm
+            .where(Contact::class.java)
+            .limit(4)
+            .findAll()
+```
+
+</details> 
+
+- Ordenar lista por orden alfabético INVERTIDO (el nombre)
+
+<details>
+	<summary>Solucion</summary>
+	
+```kotlin
+contacts = realm
+            .where(Contact::class.java)
+            .sort("name",Sort.DESCENDING)
+            .findAll()
+```
+
+</details> 
+
+- Que el nombre no lleve *a*, que su ID sea mayor o igual a 2 y que su ciudad no lleve *u* . Ordenar nombres por orden alfabético.
+
+
+<details>
+	<summary>Solucion</summary>
+	
+```kotlin
+contacts = realm
+            .where(Contact::class.java)
+            .not()
+            .beginGroup()
+            .contains("name","a")
+            .or()
+            .contains("city","u")
+            .endGroup()
+            .and()
+            .greaterThanOrEqualTo("id",2)
+            .sort("name")
+            .findAll()
+```
+
+</details> 
+
+
 

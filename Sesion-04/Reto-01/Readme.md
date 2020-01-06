@@ -1,27 +1,144 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## SharedPreferences
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Aplicar SharedPreferences a través de un ejemplo
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber tomado el primer tema de la sesión 1
+2. Haber cursado el [Ejemplo 01](../Ejemplo-01)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+- Vamos a hacer un ejemplo de login con SharedPreferences, tomaremos un booleano como bandera para saber si se está loggeado o no. ***Nota: desaconsejamos utilizar una bandera para identificar que un usuario ha iniciado sesión, existen mecanismos más seguros y sofisticados*
 
-<details>
+1. Seteamos este login en el layout del MainActivity
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+    <ImageView
+        android:id="@+id/imgBedu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/bedu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBedu" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMail" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPass" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
+2. Guardamos el archivo adjunto ***bedu.png*** en la carpeta drawable, dentro de res. 
+
+
+3. Para cambiar de pantalla sin poder regresar a la anterior con el botón back, aquí está el siguiente código.
+
+```kotlin
+val i = Intent(this, LoggedActivity::class.java)
+            i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(i)
+```
+4. Utilizar este código para que en onStart cambiar de actividad (hay que declarar los métodos isLogged y goToLogged)
+
+```kotlin
+   override fun onStart() {
+        super.onStart()
+
+        if(isLogged()){
+            goToLogged()
+        }
+    }
+```
+
+5. Guardar este archivo como *activity_logged.xml*
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <TextView
+    android:id="@+id/tvEmail"
+        android:text="Correo"
+    android:layout_marginTop="64dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvName"
+        android:text="Nombre"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Cerrar sesión"
+        android:id="@+id/btnClose"
+        android:layout_marginTop="64dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+```
+
+**Aconsejamos también declarar todos los tags en una sola actividad y que la otra los utilice, evitando así confusiones en ellas**
+```kotlin
+companion object{
+        val PREFS_NAME = "org.bedu.login"
+        val EMAIL = "email"
+        val IS_LOGGED = "is_logged"
+    }
+```
+
+utilizando:
+```kotlin
+getSharedPreferences(MainActivity.PREFS_NAME, Context.MODE_PRIVATE)
+```
+
+Las pantallas se deben ver así
+
+<img src="01.png" width="33%">
+
+<img src="02.png" width="33%">
+
 

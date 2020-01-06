@@ -1,27 +1,29 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 03
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Un sencillo ejercicio para desactivar la configuración automática de Crashlytics
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber terminado los ejercicios anteriores
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+- Para no admitir la configuración automática, poner las siguientes líneas de código en el *AndroidManifest.xml*
 
-<details>
+```xml
+<meta-data
+    android:name="firebase_crashlytics_collection_enabled"
+    android:value="false" />
+```
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+- Probar con cualquier ejercicio de la sesiónpara comprobar que deja de funcionar el servicio de Crashlytics.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+
+- En este modo, nosotros somos responsables de activar el servicio en cada Activity, por medio de este método:
+
+```kotlin
+Fabric.with(this, Crashlytics())
+```
 
