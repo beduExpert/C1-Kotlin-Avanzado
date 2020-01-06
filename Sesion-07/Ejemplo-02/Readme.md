@@ -1,27 +1,22 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Inyección de dependencias
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Que el usuario comprenda a través de este ejemplo el concepto de DI y sus implicaciones
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Leer el enlace al tema homónimo y de Dagger en el Prework
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
 
-<details>
+1. Instalamos Dagger 2
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+```kotlin
+ implementation 'com.google.dagger:dagger:2.25.2'
+    api 'com.google.dagger:dagger-android-support:2.25.2'
+    kapt 'com.google.dagger:dagger-compiler:2.25.2'
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+2. Ponemos en el layout un textView con id *textView* y un ImageView con id *chest*, agregamos la imagen ***chest.png*** que está en este proyecto
