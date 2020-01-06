@@ -78,6 +78,7 @@ Al compilar se generará la clase llamada arriba, tomando el nombre de la interf
  9. Ahora sólo queda asignar el valor *hint* de nuestro Secreto al *textView* cuando el usuario de click en el cofre.
  
  Debe quedar al final algo así: 
+ 
  <img src="01.png" width="33%"/>
 
 
