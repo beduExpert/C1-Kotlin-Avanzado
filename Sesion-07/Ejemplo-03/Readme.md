@@ -69,4 +69,4 @@ val observable = listOf("Manuel", "Agnès", "Frida", "Anaïs")
 
 Corre el proyecto, en la pantalla debe aparecer esta pantalla: 
 
-<img src="01.png" width="33%"/>
+<img src="02.png" width="33%"/>
