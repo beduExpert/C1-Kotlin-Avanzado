@@ -21,6 +21,7 @@ Usaremos de base el ejercicio anterior. Con la siguiente lista de operators, cum
 
 <details>
 	<summary>Solucion</summary>
+
 1. 
  > .distinct()
 	
