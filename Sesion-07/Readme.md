@@ -11,7 +11,6 @@
 	
 	
 - [Ejemplo 02](Ejemplo-02) Inyección de dependencias
-- [Reto 02](Reto-02)
 
 
 - [Ejemplo 03](Ejemplo-03) RxKotlin
