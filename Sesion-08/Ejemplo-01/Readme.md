@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 
-- Aprennder a usar el GPS del dispositivo para obtener la localización del usuario.
+- Aprender a usar el GPS del dispositivo para obtener la localización del usuario.
 
 #### REQUISITOS
 
@@ -102,6 +102,9 @@ implementation 'com.google.android.gms:play-services-location:17.0.0'
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+El layout debe verse así:
+
+<img src="01.png" width="33%"/>
 
 4. Procedemos a implementar el código de GPS
 
@@ -184,3 +187,11 @@ Mostramos la localización en formato latitud y longitud en los TextViews corres
 ```
 
 Y asignamos el método getLocation al botón de localización
+
+La primera vez que abramos la app, o hasta no dar permisos, aparecerá este mensaje cuando demos click al botón
+
+<img src="02.png" width="33%"/>
+
+Resultado final:
+
+<img src="03.png" width="33%"/>
