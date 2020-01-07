@@ -1,27 +1,72 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## RxKotlin
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Entender el patrón Observable y su implementación para ReactiveX
+- Comprender el uso de RxKotlin (Wrapper de RxJava)
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber estudiado previamente los temas en el prework relacionados a este.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
 
-<details>
+1. Instalamos las dependencias
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+```kotlin
+implementation "io.reactivex.rxjava2:rxkotlin:2.4.0"
+implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+2. Generamos una lista con números del 1 al 8 e imprimimos em pantalla sus potencias cuadradas: 
+
+```kotlin  
+val numsObservable = listOf(1,2,3,4,5,6,7,8) //lista del uno al ocho
+            .toObservable() //Volveéndolo observable
+            .observeOn(AndroidSchedulers.mainThread()) //correr en el main thread
+            .map {number -> number*number} //número al cuadrado en la lista
+            .subscribeBy ( //Gestionando los tres callbacks : 
+                onError =  { it.printStackTrace() }, //cuando alguno de la iteración falla
+                onNext = { println("numero: $it") }, //cuando se reproducjo una nueva iteración
+                onComplete = {  } //cuando se completó la o
+            )
+```
+
+Corremos la app y consultamos el logcat, visualizaremos lo siguiente:
+
+<img src= "01.png" width="100%"/>
 
 
+3. Ahora, guardaremos una lista de nombres por medio de un observable, para eso necesitamos un Layout con un *ListView* llamado ***lista***. 
+
+4. Inicializamos una lsita de nombres y creamos un ArrayAdapter para simplificar la construcción de la lista. 
+
+```kotlin
+var names = arrayListOf("Juan")
+val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,names)
+lista.adapter = adapter
+```
+
+5. Y seteamos nuestro observable, que hara que se agregue el resto de nombres de la lista
+
+```kotlin
+val observable = listOf("Manuel", "Agnès", "Frida", "Anaïs")
+            .toObservable()
+            .observeOn(Schedulers.computation()) //correr en el main thread
+            .subscribeBy (
+                    onError =  { it.printStackTrace() },
+                    onNext = {
+                        names.add(it)
+                        adapter.notifyDataSetChanged()
+                    },
+                    onComplete = {
+                        progress.visibility = View.GONE
+                    }
+                )
+```
+
+Corre el proyecto, en la pantalla debe aparecer esta pantalla: 
+
+<img src="01.png" width="33%"/>
