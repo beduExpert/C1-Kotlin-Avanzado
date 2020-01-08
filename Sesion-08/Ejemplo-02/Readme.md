@@ -2,11 +2,11 @@
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender a usar la cámara de android
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber leído los temas del Prework
 
 #### DESARROLLO
 
