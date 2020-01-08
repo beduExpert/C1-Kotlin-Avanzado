@@ -255,6 +255,7 @@ Entrando a la cámara
 <img src="02.jpeg" width="33%"/>
 
 Foto tomada
+
 <img src="03.jpeg" width="33%"/>
 
 Mostramos la ubicación de la foto con *ES Explorador de archivos*.
