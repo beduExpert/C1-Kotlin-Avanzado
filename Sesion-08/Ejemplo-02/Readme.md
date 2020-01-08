@@ -248,15 +248,15 @@ class CameraActivity : AppCompatActivity(){
 
 La aplicación debe verse así
 
-<img src="01.png" width="33%"/>
+<img src="01.jpeg" width="33%"/>
 
 Entrando a la cámara 
 
-<img src="02.png" width="33%"/>
+<img src="02.jpeg" width="33%"/>
 
 Foto tomada
-<img src="03.png" width="33%"/>
+<img src="03.jpeg" width="33%"/>
 
 Mostramos la ubicación de la foto con *ES Explorador de archivos*.
 
-<img src="04.png" width="33%"/>
+<img src="04.jpeg" width="33%"/>
