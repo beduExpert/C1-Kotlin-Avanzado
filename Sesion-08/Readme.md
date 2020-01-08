@@ -1,16 +1,18 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Titulo de la Sesion 
+## Sensores y cámaraa
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Utilizar los componentes básicos de los dispositivos android para dar al usuario una interacción más integral con la app.
+
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- [Ejemplo 01](Ejemplo-01) Localización y GPS
+- [Reto 01](Reto-01)
+	
+	
+- [Ejemplo 02](Ejemplo-02) Cámara
+- [Reto 02](Reto-02)
 
-	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
+
 
