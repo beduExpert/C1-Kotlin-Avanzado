@@ -15,6 +15,5 @@
 
 
 - [Ejemplo 03](Ejemplo-03) Preparando lanzamiento
-- [Reto 03](Reto-03)
 
 
