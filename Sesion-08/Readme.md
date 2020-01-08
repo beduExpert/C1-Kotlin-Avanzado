@@ -2,7 +2,8 @@
 
 ### OBJETIVOS 
 
-- Diseñar la estructura del proyecto y la composición de los archivos, separando la lógica de la vista a través de líneas de guía para aportar escalabilidad, optimización y legibilidad al código. 
+- Utilizar los componentes básicos de los dispositivos android para dar al usuario una interacción más integral con la app.
+
 
 #### ORGANIZACION DE LA CLASE 
 
