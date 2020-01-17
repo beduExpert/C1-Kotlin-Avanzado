@@ -1,27 +1,28 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## POSTWORK
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Implementar una transición vista en el ejemplo 3 para la tienda
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber terminado el tercer ejemplo y su reto para el [Ejemplo 3](../Ejemplo-03) o el [Reto 3](../Reto-03)
+
+2. Haber finalizado el [Postwork](../../Sesion-02/Postwork) de la [Sesión 2](../../Sesion-02)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Desarrollar cualquiera o las dos tareas listadas a continuación, Al dar click en algún producto de la lista:
 
-<details>
+* Deberemos crear una transición similar a esta con la imagen del producto:
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+<img src="../Ejemplo-01/Images/expandable-view.gif" width="30%">
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+* Animar la entrada y salida de nuevos elementos con este tipo de instrucción (tomar ejemplo del [Reto 3](../Reto-03) ):
+
+```kotlin
+window.enterTransition = Slide() 
+```
+
 
 
