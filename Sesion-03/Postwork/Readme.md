@@ -1,27 +1,31 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Postwork
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Implementar el consumo de algún web service a nuestra app
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber cursado todos los ejercicos de la sesión 3
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Aplicaremos el consumo de un servicio web para simular el inicio de sesión a través de una API de testing.
 
-<details>
+Para esto, nos apoyaremos de un sitio web que nos facilite la API, sugerimos usar [reqres](https://reqres.in/) y buscar el servicio de login que funciona con el método POST, probablemente requiera xxx-form-urlenconded pero no está confirmado (hacer pruebas con y sin la anotación), para ese caso, podría aplicar el siguiente código:
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+```kotlin
+@FormUrlEncoded
+@POST("login")
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+También debemos obtener los datos de perfil del usuario y desplegarlos en una *Activity*, se recomienda crear un *TabLayout* con todas las pantallas que vamos a mostrar en el menú principal y ahí colocar la pantalla de perfil, algo como la siguiente pantalla:
+
+<img src="01.png" width="33%"/>
+
+[Reqres](https://reqres.in/) falicita un web service para obtener un perfil:
+
+https://reqres.in/api/users/[un-numero]
 
 
