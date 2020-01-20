@@ -1,27 +1,17 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Postwork
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Verificar cualquier crasheo en la aplicacicón por medio de crashlytics
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber cursado previamente todos los ejemplos y los retos de esta sesión
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Podemos aprovechar esta herramienta para detectar todos los errores que cometamos al crear la app. Crear su propio criterio conforme a la estructura del proyecto elegido y determinar donde se debería aplicar crashlytics.
 
-<details>
+- Conviene enviar el token de usuario y correo electrónico cuando exista un error en la aplicación.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+- El login puede ser un punto importante donde poner crashlytics y saber los errores (se podría ingresar el nombre que se está usando en el login)
