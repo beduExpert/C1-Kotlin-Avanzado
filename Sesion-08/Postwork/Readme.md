@@ -1,27 +1,19 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
 ## Titulo del Ejemplo
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Utilizar la cámara y el gps en nuestra aplicación
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber terminado la sesión 8 
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Para una aplicación de un e-commerce, se requiere a veces evidenciar ciertas cosas como documentación para una compra a mayoreo o evidencias al presentar un reclamos por producto maltratado, etc. Eso se hace mediante fotografías. Podemos entonces simular cualquiera de estos escenarios mediante la cámara.
 
-<details>
+- Simular un caso de uso que implique el uso de la cámara, tal como los ejemplos anteriormente descritos.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+- Adicionalmente, poder pagar el carrito directamente agitando el teléfono (se puede hacer la detección de forma nativa como en [este tutorial](https://inducesmile.com/android-programming/how-to-use-shake-device-sensors-in-android/),existen librerías como [seismik](https://github.com/snigavig/seismiK) para eso, ejemplo de uso [aquí](https://androidpedia.net/en/tutorial/4501/detect-shake-event-in-android) investigar la forma o inventar la suya con otro sensor.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+- Utilizar el gps y establecer un rango de coordenadas donde se permiten las compras, y si no se está en el rango indicado, no permitir la compra.
