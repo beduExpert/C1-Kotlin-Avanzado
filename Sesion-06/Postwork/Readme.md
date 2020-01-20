@@ -1,11 +1,8 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Postwork
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Implementar el servicio de notificaciones al pagar el carrito de compras
 
 #### REQUISITOS
 
@@ -13,15 +10,15 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Para este módulo, será necesario crear el flujo de pago de los productos en el carrito de compras.
 
-<details>
+Crearemos la pantalla de pago y el botón de confirmar pago, el cual simulará la compra y detonará que recibamos una notificación indicando que nuestra compra se ha realizado y se muestre una lista de los productos comprados.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Este es un ejemplo de pantalla de pago
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+<img src="01.jpeg" width="33%"/>
 
+
+y este es un ejemplo de push notification de un producto entragado por amazon que puede ser la base de la push a generar.
+<img src="02.png" width="33%"/>
 
