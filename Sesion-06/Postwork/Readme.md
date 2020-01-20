@@ -20,5 +20,6 @@ Este es un ejemplo de pantalla de pago
 
 
 y este es un ejemplo de push notification de un producto entragado por amazon que puede ser la base de la push a generar.
+
 <img src="02.png" width="33%"/>
 
