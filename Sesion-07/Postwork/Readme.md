@@ -1,27 +1,13 @@
+## Postwork
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+### OBJETIVOS 
 
-## Titulo del Ejemplo
+- Agregar un patrón de arquitectura a nuestra app
 
-### OBJETIVO
+#### ORGANIZACION DE LA CLASE 
 
-- Lo que esperamos que el alumno aprenda
+Hasta el momento a todo lo de este proyecto no se le ha dado un formato correcto. Por eso, necesitaremos darle estructura ccon un Patrón de arquitetctura. 
 
-#### REQUISITOS
+- Para la aplicación, reestructurar el código parcialmente o totalmente con el patrón MVP.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
-
-#### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+- Utilizar RxKotlin para recuperar los datos del perfil (para más información, buscar documentación de retrofit y rxkotlin como [este enlace](https://code.tutsplus.com/es/tutorials/connect-to-an-api-with-retrofit-rxjava-2-and-kotlin--cms-32133) )
