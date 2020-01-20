@@ -1,13 +1,20 @@
-## Postwork
+## Patrones de diseño
 
 ### OBJETIVOS 
 
-- Agregar un patrón de arquitectura a nuestra app
+- Diseñar la estructura del proyecto y la composición de los archivos, separando la lógica de la vista a través de líneas de guía para aportar escalabilidad, optimización y legibilidad al código. 
 
 #### ORGANIZACION DE LA CLASE 
 
-Hasta el momento a todo lo de este proyecto no se le ha dado un formato correcto. Por eso, necesitaremos darle estructura ccon un Patrón de arquitetctura. 
+- [Ejemplo 01](Ejemplo-01) Patrón de arquitectura: Model-View-Presenter
+- [Reto 01](Reto-01)
+	
+	
+- [Ejemplo 02](Ejemplo-02) Inyección de dependencias
+- [Reto 02](Reto-02)
 
-- Para la aplicación, reestructurar el código parcialmente o totalmente con el patrón MVP.
 
-- Utilizar RxKotlin para recuperar los datos del perfil (para más información, buscar documentación de retrofit y rxkotlin como [este enlace](https://code.tutsplus.com/es/tutorials/connect-to-an-api-with-retrofit-rxjava-2-and-kotlin--cms-32133) )
+- [Ejemplo 03](Ejemplo-03) RxKotlin
+- [Reto 03](Reto-03)
+
+
