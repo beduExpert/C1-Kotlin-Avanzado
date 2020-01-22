@@ -6,7 +6,7 @@
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber finalizado los ejemplos y retos de esta sesión
 
 #### DESARROLLO
 
