@@ -1,4 +1,4 @@
-## Sensores y cámaraa
+## Sensores y cámara
 
 ### OBJETIVOS 
 
