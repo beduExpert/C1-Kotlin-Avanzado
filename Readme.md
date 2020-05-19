@@ -13,6 +13,6 @@
  - [Sesión 4](Sesion-04/): Persistencia de datos
  - [Sesión 5](Sesion-05/): Crashlytics
  - [Sesión 6](Sesion-06/): Push notifications
- - [Sesión 7](Sesion-07/): Inyección de dependencias
- - [Sesión 8](Sesion-08/): RxKotlin
+ - [Sesión 7](Sesion-07/): Patrones de diseño
+ - [Sesión 8](Sesion-08/): Sensores y cámara
 
